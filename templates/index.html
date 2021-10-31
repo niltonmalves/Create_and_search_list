@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Find pets</title>
+    </head>
+    <body>
+        <!-- <h1>Insert Pets</h1>
+        <div>Add a new todo item: <input type="text" name="todoitem">
+                <input type="submit" value="Add Pets info">
+            </form>
+        </div> -->
+        <h1>Nome do Animal</h1>
+        <div>
+            <form action="{{ url_for('handle_data') }}" method="post">
+                <input type="text" name="projectFilepath">
+                <input type="submit" value="adicionar nome">
+            </form>
+            <!-- <form action="{{ url_for('handle_data') }}" method="post">
+                <input type="text" name="idade">
+                <input type="submit" value="adicionar idade">
+            </form> -->
+        </div>
+        <!-- <div>
+            <h2>idade do Animal</h2>
+            <form action="{{ url_for('handle_data') }}" method="post">
+                <input type="text" name="idade">
+                <input type="submit" value="adicionar idade">
+            </form>
+        </div> -->
+
+    </body>
+</html>

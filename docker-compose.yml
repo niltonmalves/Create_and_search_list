@@ -1,0 +1,25 @@
+version: "3.2"
+services:
+  db:
+    image: mongo:4.2
+    container_name: db
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_DATABASE: Animais
+  api:
+    image: python:3.9
+    container_name: webapp
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: pip install Flask==2.0.2
+    command: python app.py
+
+  
