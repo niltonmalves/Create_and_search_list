@@ -32,6 +32,6 @@ register items and access a list of items
 
 Layout
 
-![bancodados](C:\Users\alves\Documents\GitHub\Create_and_search_list\imagens\bancodados.PNG)
+![bancodados](https://github.com/niltonmalves/Create_and_search_list/blob/main/imagens/bancodados.PNG?allow=True)
 
-![insere_nome](C:\Users\alves\Documents\GitHub\Create_and_search_list\imagens\insere_nome.PNG)
+![insere_nome](https://github.com/niltonmalves/Create_and_search_list/blob/main/imagens/insere_nome.PNG)
