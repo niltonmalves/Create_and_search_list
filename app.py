@@ -37,17 +37,14 @@ def add():
 def mostrar_pagina_principal():
     return render_template('index.html')
 
-@app.route("/sobre")
-def mostrar_pagina_sobre(): 
-    return "Olá, meu nome é Jan!" 
-@app.route("/contato")
-def mostrar_pagina_de_contato(): 
-    return "Email: janks@puc-rio.br"
+# @app.route("/sobre")
+# def mostrar_pagina_sobre(): 
+#     return "Olá" 
 
-@app.route("/sequencia/<int:numero_final>") 
-def imprimir_sequencia(numero_final): 
-    texto_da_contagem = ""
-    for numero in range(1, numero_final + 1): 
-        texto_da_contagem += str(numero) + " "
-    return texto_da_contagem 
+# @app.route("/sequencia/<int:numero_final>") 
+# def imprimir_sequencia(numero_final): 
+#     texto_da_contagem = ""
+#     for numero in range(1, numero_final + 1): 
+#         texto_da_contagem += str(numero) + " "
+#     return texto_da_contagem 
 app.run(port=5000)
